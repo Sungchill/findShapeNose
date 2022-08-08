@@ -12,7 +12,7 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
-		<title>Hello, world!</title>
+		<title>FindNoseShape</title>
 		<link rel="stylesheet" href="style.css" />
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -24,12 +24,16 @@
 			gtag('config', 'UA-145482737-6');
 		</script>
 		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62f09fb9e2010f67"></script>
-
+		<script
+			type="text/javascript"
+			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62f09fb9e2010f67"
+		></script>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
-			<a class="navbar-brand" href="#">어울리는 코 모양 찾기</a>
+			<a class="navbar-brand" href="#">인공지능 코 성형 도우미</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -43,7 +47,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<!-- <li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
@@ -56,12 +60,12 @@
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
 							>Disabled</a
 						>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</nav>
 		<section class="section">
-			<h1 class="title">인공지능 코 성형 도우미</h1>
+			<h1 class="title">내얼굴에 어울리는 코 모양 찾기</h1>
 			<h2 class="subtitle">나는 어떤 코 모양이 어울릴까?</h2>
 		</section>
 
@@ -107,8 +111,7 @@
 					</button>
 				</div>
 				<!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox"></div>
-            
+				<div class="addthis_inline_share_toolbox"></div>
 			</div>
 		</div>
 		<!-- Optional JavaScript -->
@@ -255,15 +258,13 @@
 						break;
 					case 'tabi':
 						resultTitle = '버선코';
-						resultExplain =
-							'콧대는 낮고 코끝이 화려하게 솟은 코';
+						resultExplain = '콧대는 낮고 코끝이 화려하게 솟은 코';
 						resultCeleb =
 							'버선코 연예인: 장나라, 서인영, 전여빈, 노제, 고성희, 이주빈, 정호연, 정채연, 정소민, 한예리';
 						break;
 					case 'halftabi':
 						resultTitle = '반버선코';
-						resultExplain =
-							'콧대에서 코끝까지 완만한 곡선 형태를 띠는 코';
+						resultExplain = '콧대에서 코끝까지 완만한 곡선 형태를 띠는 코';
 						resultCeleb =
 							'반버선코 연예인: 태연, 윤아, 윈터, 선미, 로제, 김세정, 손나은, 김다미, 이유비, 이다희';
 						break;
@@ -313,9 +314,21 @@
 							labelTitle = '알수없음';
 					}
 
-					var label = "<div class='nose-label d-flex align-items-center'>" + labelTitle + "</div>"
-                var bar = "<div class='bar-container position-relative container'><div class='" + prediction[i].className + "-box'></div><div class='d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
-                labelContainer.childNodes[i].innerHTML = label + bar;
+					var label =
+						"<div class='nose-label d-flex align-items-center'>" +
+						labelTitle +
+						'</div>';
+					var bar =
+						"<div class='bar-container position-relative container'><div class='" +
+						prediction[i].className +
+						"-box'></div><div class='d-flex justify-content-center align-items-center " +
+						prediction[i].className +
+						"-bar' style='width: " +
+						barWidth +
+						"'><span class='d-block percent-text'>" +
+						Math.round(prediction[i].probability.toFixed(2) * 100) +
+						'%</span></div></div>';
+					labelContainer.childNodes[i].innerHTML = label + bar;
 				}
 			}
 		</script>
