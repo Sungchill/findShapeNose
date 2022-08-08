@@ -1,6 +1,6 @@
 body {
-	font-family: 'Jua', sans-serif;
-	background-color: #ffffff;
+	font-family: 'Black Han Sans', sans-serif;
+	background-color: #FBEAFF;
 	box-sizing: border-box;
 	color: #35465d;
 }
@@ -9,7 +9,7 @@ body {
 	margin: 0 auto;
 	border-radius: 10px;
 	border: solid 1.5px #f6f7fa;
-	background-color: #f6f7fa;
+	background-color: #FFE7BF;
 }
 .file-upload-btn {
 	width: 100%;
@@ -64,12 +64,12 @@ body {
 	object-fit: contain;
 	border-radius: 10px;
 	border: dashed 1.5px #35465d;
-	background-color: #ffffff;
+	background-color: #FFF8BC;
 }
 
 .image-dropping,
 .image-upload-wrap:hover {
-	background-color: #35465d82;
+	background-color: #FFFFDE;
 	border: 1.5px dashed #ffffff;
 }
 
@@ -124,6 +124,8 @@ body {
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
+	font-size: 30px;
+	font-style: border;
 }
 
 .navbar-light .navbar-toggler {

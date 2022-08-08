@@ -12,6 +12,9 @@
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+		</style>
 		<title>FindNoseShape</title>
 		<link rel="stylesheet" href="style.css" />
 		<script>
@@ -94,7 +97,7 @@
 					<div class="spinner-border" role="status">
 						<span class="sr-only">Loading...</span>
 					</div>
-					<p class="text-center">AI가 당신의 동물상을 분석중입니다.</p>
+					<p class="text-center">AI가 당신과 어울리는 코 모양을 분석중입니다.</p>
 				</div>
 				<p class="result-message"></p>
 				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
@@ -248,25 +251,25 @@
 						resultTitle = '직선코';
 						resultExplain = '콧대에서 코 끝까지 일자로 떨어지는 코';
 						resultCeleb =
-							'직선코 연예인 : 설리, 전지현, 이영애, 신세경, 아이린, 소희, 김태희, 제니, 카리나, 고윤정';
+							'직선코 연예인 : 전지현, 아이린, 제니, 카리나, 고윤정';
 						break;
 					case 'strhalf':
 						resultTitle = '직반버선코';
 						resultExplain = '콧대는 직선 느낌이고 코끝이 살짝 높아지는 코';
 						resultCeleb =
-							'직반버선코 연예인: 노제, 이민정, 김유정, 유리, 이효리, 수지, 송혜교, 한지민, 한가인, 임수정';
+							'직반버선코 연예인: 이효리, 수지, 송혜교, 한지민, 한가인, 임수정';
 						break;
 					case 'tabi':
 						resultTitle = '버선코';
 						resultExplain = '콧대는 낮고 코끝이 화려하게 솟은 코';
 						resultCeleb =
-							'버선코 연예인: 장나라, 서인영, 전여빈, 노제, 고성희, 이주빈, 정호연, 정채연, 정소민, 한예리';
+							'버선코 연예인: 장나라, 서인영, 전여빈,이주빈, 정채연, 정소민';
 						break;
 					case 'halftabi':
 						resultTitle = '반버선코';
 						resultExplain = '콧대에서 코끝까지 완만한 곡선 형태를 띠는 코';
 						resultCeleb =
-							'반버선코 연예인: 태연, 윤아, 윈터, 선미, 로제, 김세정, 손나은, 김다미, 이유비, 이다희';
+							'반버선코 연예인: 태연, 윈터, 선미, 로제, 김세정, 이다희';
 						break;
 					default:
 						resultTitle = '알수없음';
