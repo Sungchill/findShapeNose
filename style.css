@@ -119,7 +119,13 @@ body {
 	border: 0;
 	transition: all 0.2s ease;
 }
-
+.navbar {
+	position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+}
 .navbar-light .navbar-brand {
 	line-height: 1.68;
 	text-align: left;
