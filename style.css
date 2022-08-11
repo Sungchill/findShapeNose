@@ -120,6 +120,8 @@ body {
 	transition: all 0.2s ease;
 }
 .navbar {
+	
+	padding-top: 300px;
 	position: fixed;
   top: 0;
   /* width: 100% */
