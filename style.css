@@ -392,5 +392,5 @@ input:checked + label > .knob > i:before {
 	margin: 0 auto;
 }
 .modal-body {
-	max-=width : 
+	max-width: 250px : 
 }
