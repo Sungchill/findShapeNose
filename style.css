@@ -3,6 +3,7 @@ body {
 	background-color: #FBEAFF;
 	box-sizing: border-box;
 	color: #35465d;
+	padding-top: 75px;
 }
 .file-upload {
 	padding: 7% 5%;
@@ -120,8 +121,6 @@ body {
 	transition: all 0.2s ease;
 }
 .navbar {
-	
-	padding-top: 300px;
 	position: fixed;
   top: 0;
   /* width: 100% */
