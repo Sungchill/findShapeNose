@@ -120,12 +120,13 @@ body {
 	border: 0;
 	transition: all 0.2s ease;
 }
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
 .navbar {
-	position: fixed;
-  top: 0;
-  /* width: 100% */
-  left: 0;
-  right: 0;
+	position: relative;
+ 	display : flex;
 }
 .navbar-light .navbar-brand {
 	line-height: 1.68;
