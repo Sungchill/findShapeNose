@@ -147,6 +147,11 @@ body {
 	text-align: center;
 	color: #35465d;
 }
+.notice {
+	line-height: 0.3;
+	text-align: center;
+	color: #808080;
+}
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
@@ -285,9 +290,16 @@ body {
 .result-message {
 	font-size: 2rem;
 }
+.result-image {
+	width: 15%;
+}
 
 .nose-explain {
 	font-size: 1.3rem;
+}
+.nose-noticing {
+	font-size: 0.8rem;
+	color: #808080
 }
 .str-nose-title {
 	color: #3ba363;
@@ -318,10 +330,7 @@ body {
 	font-size: 1.2rem;
 }
 
-/* gender */
-input#gender {
-	display: none;
-}
+
 
 label {
 	cursor: pointer;
@@ -401,4 +410,8 @@ input:checked + label > .knob > i:before {
 
 .ad-banner {
 	max-width: 320px;
+	margin: 0 auto;
+}
+.modal-body {
+	max-=width : 
 }

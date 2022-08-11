@@ -1,0 +1,45 @@
+body {
+	font-family: 'Black Han Sans', sans-serif;
+	background-color: #FBEAFF;
+	box-sizing: border-box;
+	color: #35465d;
+}
+.navbar-light .navbar-brand {
+	line-height: 1.68;
+	text-align: left;
+	color: #35465d;
+	font-size: 30px;
+	font-style: border;
+}
+
+.navbar-light .navbar-toggler {
+	border-color: #ffffff;
+}
+
+.section {
+	margin-top: 50px;
+	width: 100%;
+}
+
+.title {
+	line-height: 1.67;
+	text-align: center;
+	color: #000000;
+}
+
+.int {
+	line-height: 1.2;
+	text-align: center;
+	color: #2C3639;
+}
+
+.notice {
+	line-height: 0.5;
+	text-align: center;
+	color: #808080;
+}
+
+.ad-banner {
+	max-width: 320px;
+	margin: 0 auto;
+}

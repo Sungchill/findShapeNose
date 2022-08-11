@@ -34,9 +34,9 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	</head>
-	<body>
+	<body id="body">
 		<nav class="navbar navbar-expand-lg navbar-light nav-distance">
-			<a class="navbar-brand" href="#">인공지능 코 성형 도우미</a>
+			<a class="navbar-brand" href="#">재미로 보는 코 성형 도우미</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -50,13 +50,13 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<!-- <li class="nav-item active">
+					<li class="nav-item active">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
+						<a class="nav-link" href="introduce.html">introduce</a>
 					</li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="#">Pricing</a>
 					</li>
 					<li class="nav-item">
@@ -69,7 +69,8 @@
 		</nav>
 		<section class="section">
 			<h1 class="title">내얼굴에 어울리는 코 모양 찾기</h1>
-			<h2 class="subtitle">나는 어떤 코 모양이 어울릴까?</h2>
+			<h2 class="subtitle">AI가 당신과 어울리는 코 모양을 찾아줍니다!!</h2>
+			<h5 class="notice">(본 테스트는 사진 정보 수집을 일절 하지 않습니다.)</h5>
 		</section>
 
 		<script
@@ -100,6 +101,7 @@
 					<p class="text-center">AI가 당신과 어울리는 코 모양을 분석중입니다.</p>
 				</div>
 				<p class="result-message"></p>
+				<p class="result-img"></p>
 				<div id="label-container" class="d-flex flex-column justify-content-around"></div>
 
 				<div class="pt-3 image-title-wrap">
@@ -117,6 +119,23 @@
 				<div class="addthis_inline_share_toolbox"></div>
 			</div>
 		</div>
+		<div class = "ad-banner">
+		<ins
+			class="kakao_ad_area"
+			style="display: none;"
+			data-ad-unit="DAN-sMDuExaDQ06WBghP"
+			data-ad-width="320"
+			data-ad-height="100"
+		></ins>
+		</div>
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+		<footer class="footer pt-5 container d-flex justify-content-center">
+			<div>
+				<p>
+					&copy; sungchill 2022. All Rigths Reserved.
+				</p>
+			</div>
+		</footer>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
@@ -192,10 +211,15 @@
 						<ins
 							class="kakao_ad_area"
 							style="display: none;"
-							data-ad-unit="DAN-t89oh3sc0ew5"
-							data-ad-width="300"
+							data-ad-unit="DAN-dnKFOjr7ssKDwiRr"
+							data-ad-width="250"
 							data-ad-height="250"
 						></ins>
+						<script
+							type="text/javascript"
+							src="//t1.daumcdn.net/kas/static/ba.min.js"
+							async
+						></script>
 					</div>
 					<div class="modal-footer d-flex justify-content-center">
 						<button type="button p-2" class="try-again-btn" onclick="gaReload2();">
@@ -218,14 +242,15 @@
 				window.location.reload();
 			}
 		</script>
+
 		<script type="text/javascript">
 			// More API functions here:
 			// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
 			// the link to your model provided by Teachable Machine export panel
-			const URL = 'https://teachablemachine.withgoogle.com/models/3JoseY94Y/';
+			const URL = 'https://teachablemachine.withgoogle.com/models/s01sq85HD/';
 
-			let model, webcam, labelContainer, maxPredictions;
+			let model, labelContainer, maxPredictions;
 
 			// Load the image model and setup the webcam
 			async function init() {
@@ -249,33 +274,36 @@
 				switch (prediction[0].className) {
 					case 'str':
 						resultTitle = '직선코';
-						resultExplain = '콧대에서 코 끝까지 일자로 떨어지는 코';
-						resultCeleb =
-							'직선코 연예인 : 전지현, 아이린, 제니, 카리나, 고윤정';
+						resultExplain =
+							'직선코는 콧대에서 코 끝까지 일자로 떨어지는 곧고 매끈한 코이며, 세련되고 우아한 이미지를 주는 코입니다.';
+						resultCeleb = '직선코 연예인 : 전지현, 아이린, 제니, 카리나, 고윤정';
 						break;
 					case 'strhalf':
 						resultTitle = '직반버선코';
-						resultExplain = '콧대는 직선 느낌이고 코끝이 살짝 높아지는 코';
+						resultExplain =
+							'직반버선코는 콧대는 직선 느낌이고 코끝이 살짝 높아지는 코이며, 어려보이는 느낌을 낼 수 있는 코입니다.';
 						resultCeleb =
 							'직반버선코 연예인: 이효리, 수지, 송혜교, 한지민, 한가인, 임수정';
 						break;
 					case 'tabi':
 						resultTitle = '버선코';
-						resultExplain = '콧대는 낮고 코끝이 화려하게 솟은 코';
+						resultExplain =
+							'버선코는 콧대는 낮고 코끝이 화려하게 솟은 코이며, 서구적인 미인상에 자주 나타나는 코입니다.';
 						resultCeleb =
 							'버선코 연예인: 장나라, 서인영, 전여빈,이주빈, 정채연, 정소민';
 						break;
 					case 'halftabi':
 						resultTitle = '반버선코';
-						resultExplain = '콧대에서 코끝까지 완만한 곡선 형태를 띠는 코';
-						resultCeleb =
-							'반버선코 연예인: 태연, 윈터, 선미, 로제, 김세정, 이다희';
+						resultExplain =
+							'반버선코는 콧대에서 코끝까지 완만한 곡선 형태를 띠는 코이며, 자연스러우면서 여성스러운 코입니다.';
+						resultCeleb = '반버선코 연예인: 태연, 윈터, 선미, 로제, 김세정, 오연서';
 						break;
 					default:
 						resultTitle = '알수없음';
 						resultExplain = '';
 						resultCeleb = '';
 				}
+
 				var title =
 					"<div class='" +
 					prediction[0].className +
@@ -289,7 +317,11 @@
 					"-nose-celeb pt-2 pb-2'>" +
 					resultCeleb +
 					'</div>';
-				$('.result-message').html(title + explain + celeb);
+				var noticing =
+					"<div class='nose-noticing pt-2'>" + '본 테스트는 재미를 위한 테스트이며 각도, 빛 등에 따라 결과가 다르게 나올 수 있습니다.' + '</div>';
+					
+
+				$('.result-message').append(title + explain + celeb + noticing);
 				var barWidth;
 				for (let i = 0; i < maxPredictions; i++) {
 					if (prediction[i].probability.toFixed(2) > 0.1) {
