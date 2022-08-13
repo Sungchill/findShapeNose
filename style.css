@@ -2,7 +2,7 @@ body {
 	font-family: 'Black Han Sans', sans-serif;
 	background-color: #FBEAFF;
 	box-sizing: border-box;
-	color: #35465d;
+	color: #000000;
 }
 .file-upload {
 	padding: 7% 5%;
@@ -63,7 +63,7 @@ body {
 	position: relative;
 	object-fit: contain;
 	border-radius: 10px;
-	border: dashed 1.5px #35465d;
+	border: dashed 1.5px #000000;
 	background-color: #FFF8BC;
 }
 
@@ -96,8 +96,8 @@ body {
 
 .try-again-btn {
 	border-radius: 40px;
-	border: solid 1.5px #35465d;
-	background-color: #35465d;
+	border: solid 1.5px #000000;
+	background-color: #000000;
 }
 
 .try-again-text {
@@ -130,7 +130,7 @@ body {
 .navbar-light .navbar-brand {
 	line-height: 1.68;
 	text-align: left;
-	color: #35465d;
+	color: #000000;
 	font-size: 25px;
 	font-style: border;
 }
@@ -149,13 +149,13 @@ body {
 .title {
 	line-height: 1.67;
 	text-align: center;
-	color: #35465d;
+	color: #000000;
 }
 
 .subtitle {
 	line-height: 1.53;
 	text-align: center;
-	color: #35465d;
+	color: #000000;
 }
 .notice {
 	line-height: 0.3;
@@ -182,7 +182,7 @@ body {
 	font-size: 1.5rem;
 	line-height: 1.53;
 	text-align: center;
-	color: #35465d;
+	color: #000000;
 	margin: 0 auto;
 }
 
