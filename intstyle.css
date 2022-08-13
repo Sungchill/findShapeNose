@@ -3,22 +3,36 @@ body {
 	background-color: #FBEAFF;
 	box-sizing: border-box;
 	color: #35465d;
+	padding-top: 30px;
+}
+.navbar {
+	position: relative;
+ 	display : flex;
 }
 .navbar-light .navbar-brand {
 	line-height: 1.68;
 	text-align: left;
 	color: #35465d;
-	font-size: 20px;
+	font-size: 25px;
 	font-style: border;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-light {
 	border-color: #ffffff;
+}
+.navbar-toggler{
+	float: right !important;
+}
+.bar-container {
+	height: 2.7rem;
+}
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
 }
 
 .section {
 	margin-top: 50px;
-	width: 100%;
 }
 
 .title {

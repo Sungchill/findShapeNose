@@ -3,7 +3,7 @@ body {
 	background-color: #FBEAFF;
 	box-sizing: border-box;
 	color: #35465d;
-	padding-top: 75px;
+	padding-top: 30px;
 }
 .file-upload {
 	padding: 7% 5%;
@@ -136,8 +136,11 @@ body {
 	font-style: border;
 }
 
-.navbar-light .navbar-toggler {
+.navbar-light  {
 	border-color: #ffffff;
+}
+.navbar-toggler{
+	float: right !important;
 }
 
 .section {
