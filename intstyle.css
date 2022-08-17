@@ -4,6 +4,10 @@ body {
 	box-sizing: border-box;
 	color: #000000;
 }
+.navbar-expand-lg {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
 .navbar {
 	position: relative;
  	display : flex;
@@ -16,18 +20,8 @@ body {
 	font-style: border;
 }
 
-.navbar-light {
+.navbar-light  {
 	border-color: #ffffff;
-}
-.navbar-toggler{
-	float: right !important;
-}
-.bar-container {
-	height: 2.7rem;
-}
-.navbar-expand-lg {
-    flex-flow: row nowrap;
-    justify-content: flex-start;
 }
 
 .section {
